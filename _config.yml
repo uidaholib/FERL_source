@@ -1,0 +1,60 @@
+# Jekyll Digital Collection Generator
+
+# Note: use environment variable on build command to include analytics
+# JEKYLL_ENV=production jekyll build
+
+# Site settings
+# title appears in the header
+title: Fish Ecology Research Lab Collection
+# tagline appears in the header, should be short
+tagline: "Documents"
+# description is for metadata tags
+# might appear in search result lists, keep around 160 characters max
+description: "Bigger description about synopsis..."
+# for metatags
+keywords: university of idaho, digital collections
+# contact person
+email: ewilliamson@uidaho.edu
+
+# images
+# banner-image appears in index header
+banner-image: /assets/example.jpg
+# featured-image appears in meta tags
+# represents the collection in other aggregations
+featured-image: /objects/aacc-bowls-4-center-crop4.jpg
+
+# url variables
+# library's domain (only changed if using github pages)
+url: https://www.lib.uidaho.edu
+# location on the website, normally in /digital
+# e.g. /digital/hjccc
+baseurl: /digital/ferl
+# CDM collection alias
+collection-ids: ferl
+# Objects dir location
+objects: https://www.lib.uidaho.edu/digital/objects/ferl
+
+# url for our CDM server
+cdm-url: https://digital.lib.uidaho.edu
+# url to the shared assets folder on Digital
+digital-assets: https://www.lib.uidaho.edu/digital/assets
+
+# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
+# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
+bstheme: # leave blank or comment out for plain bootstrap
+
+# Dev variables: 
+# choose metadata set, i.e. easily switch between full or dev version
+# be sure to also change page_gen data setting!
+metadata: ferl
+
+# collection display variables 
+# see _data/metadata-fields.csv
+
+# page gen settings https://github.com/avillafiorita/jekyll-datapage_gen
+page_gen:
+  - data: 'ferl'
+    template: 'items'
+    name: 'object-id'
+    dir: 'data'
+    extension: 'html'    
