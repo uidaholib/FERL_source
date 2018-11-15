@@ -30,11 +30,11 @@ url: https://www.lib.uidaho.edu
 # e.g. /digital/hjccc
 baseurl: /digital/ferl
 # CDM collection alias
-collection-ids: ferl
+collection-id: ferl
 # Objects dir location
 objects: https://www.lib.uidaho.edu/digital/objects/ferl
 
-# url for our CDM server
+# base url for our CDM server
 cdm-url: https://digital.lib.uidaho.edu
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/digital/assets
