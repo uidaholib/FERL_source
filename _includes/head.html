@@ -6,8 +6,8 @@
 {% if page.layout == "document" %}{% include item-meta.html %}{% endif %}
 
 <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-{% if site.bstheme %}<link rel="stylesheet" href="{{ '/assets/css/' | append: site.bstheme | append: '/bootstrap.min.css' | prepend: digital-assets }}" type="text/css">
-{% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: digital-assets }}" type="text/css">{% endif %}
+{% if site.bstheme %}<link rel="stylesheet" href="{{ '/assets/css/' | append: site.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
+{% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
 
 {% include google-analytics.html %}

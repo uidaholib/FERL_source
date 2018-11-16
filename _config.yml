@@ -39,9 +39,16 @@ cdm-url: https://digital.lib.uidaho.edu
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/digital/assets
 
+# Theme Options
+# navbar text color
+# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
+navbar-color: navbar-dark
+# navbar background color
+# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
+navbar-background: bg-secondary
 # theme with Bootswatch (https://github.com/thomaspark/bootswatch)
 # Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
-bstheme: # leave blank or comment out for plain bootstrap
+bootswatch: # leave blank or comment out for plain bootstrap
 
 # Dev variables: 
 # choose metadata set, i.e. easily switch between full or dev version

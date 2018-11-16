@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md {{ site.navbar-color }} {{ site.navbar-background }}">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,19 +17,10 @@
                 </li>
                 {% endfor %}
                 <li class="nav-item ">
-                    <a class="nav-link" href="{{ site.cdm-url }}/cdm/search/collection/{{ site.collection-id }}/" target="_blank">Database</a>
+                    <a class="nav-link" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.collection-id }}/" target="_blank">Database</a>
                 </li>
             </ul>
-            <script>
-                function cdm_search() {
-                    var query = document.getElementById("nav-search").value;
-                    window.open("{{ site.cdm-url }}/cdm/search/collection/{{ site.collection-id }}/searchterm/" + encodeURIComponent(query) + "/field/all/mode/all/conn/and/order/title/ad/asc", "_blank" );
-                }
-            </script>
-            <form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="cdm_search(); return false;">
-                <input id="nav-search" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-pride-gold my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            {% include nav-search-cdm.html %}
         </div>
     </div>    
 </nav>
