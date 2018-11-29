@@ -1,4 +1,5 @@
 ---
 # find all unique subjects used in the metadata 
 ---
-{% include util/find-uniq-csv field="subjects" split-on=";" %}
+{% include util/find-uniq-csv field="concepts" split-on=";" %}
+{% include util/find-uniq-csv field="species" split-on=";" %}

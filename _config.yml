@@ -63,5 +63,5 @@ page_gen:
   - data: 'ferl'
     template: 'items'
     name: 'object-id'
-    dir: 'data'
+    dir: 'docs'
     extension: 'html'    
