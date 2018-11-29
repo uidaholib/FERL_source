@@ -1,10 +1,10 @@
 ---
-title: Data
+title: Documents
 layout: data
 permalink: /data/
 ---
 
-## Collection Metadata
+## FERL Documents
 
 The table below provides sorting and basic search of the collection contents. 
 Use the "CSV" button below to download the filtered metadata you see on the page. 
