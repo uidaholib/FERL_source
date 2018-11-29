@@ -1,14 +1,22 @@
-field,display-name,dc-map,browse-link
+field,display-name,dc-map
 title,Item title,DC.title
-creator,Creator,DC.creator
-date,Date Created,DCTERMS.created
-description,Description,DC.description
-subject,Subjects,DC.subject
-place,Location
-latitude,Latitude
-longitude,Longitude
-collection,Source Collection
+report_type,Report type,
+date,Date,DCTERMS.created
+authors,Authors,DC.creator
+authors_affiliation,Affiliation,
+contributors,Contributors,
+contributors_affiliation,Affiliation,
+funder,Funder,
+abstract,Abstract,DC.description
+species,Species,DC.subject
+concepts,Concepts,DC.subject
+places,Location,
+source,Source,
 identifier,Source Identifier
 type,Type,DC.type
 format,Format
-rightsstatement,Rights
+rights,Rights,
+rightsstatement,Rights statement,
+report_number,Report number,
+original_filename,Original filename,
+id,Digital identifier
