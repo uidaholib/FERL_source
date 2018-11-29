@@ -6,6 +6,7 @@ authors,Authors,DC.creator
 authors_affiliation,Affiliation,
 contributors,Contributors,
 contributors_affiliation,Affiliation,
+publisher,Publisher,
 funder,Funder,
 abstract,Abstract,DC.description
 species,Species,DC.subject
