@@ -1,4 +1,4 @@
-<script type="text/javascript" language="javascript" src="{{ '/assets/datatables/datatables.min.js' | prepend: site.digital-assets }}"></script>
+<script src="{{ '/datatables/datatables.min.js' | prepend: site.digital-assets }}"></script>
 <script>
     /* use jquery to initialize DataTables and load collection data */
     $(document).ready(function() {
@@ -6,7 +6,7 @@
             // use DataTables ajax load 
             ajax: { url: '{{ "/data/metadata.json" | relative_url }}', dataSrc: 'documents' },
             // get the data from the metadata.json
-            columns: [ { data: 'title' }, { data: 'date' }, { data: 'subjects' }, { data: 'description' }, { data: 'link' } ],
+            columns: [ { data: 'title' }, { data: 'date' }, { data: 'subjects' }, { data: 'abstract' }, { data: 'link' } ],
             columnDefs: [ 
                 // combine link and title for first column
                 { "render": function ( data, type, row ) { return '<a href="' + row.link +'">'+ data +'</a>'; },"targets": 0 },

@@ -15,6 +15,7 @@ description: "Bigger description about synopsis..."
 keywords: university of idaho, digital collections
 # contact person
 email: ewilliamson@uidaho.edu
+collection-date: "2018"
 
 # images
 # banner-image appears in index header
@@ -38,6 +39,8 @@ objects: https://www.lib.uidaho.edu/digital/objects/ferl
 cdm-url: https://digital.lib.uidaho.edu
 # url to the shared assets folder on Digital
 digital-assets: https://www.lib.uidaho.edu/digital/assets
+
+# google-cse-id:
 
 # Theme Options
 # navbar text color
@@ -63,5 +66,5 @@ page_gen:
   - data: 'ferl'
     template: 'items'
     name: 'object-id'
-    dir: 'docs'
+    dir: 'data'
     extension: 'html'    

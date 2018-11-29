@@ -16,11 +16,8 @@
                     <a class="nav-link" href="{{ nav.stub | relative_url }}">{{ nav.display-text }}</a>
                 </li>
                 {% endfor %}
-                <li class="nav-item ">
-                    <a class="nav-link" href="https://digital.lib.uidaho.edu/cdm/search/collection/{{ site.collection-id }}/" target="_blank">Database</a>
-                </li>
             </ul>
-            {% include nav-search-cdm.html %}
+            {% include nav-search-site.html %}
         </div>
     </div>    
 </nav>

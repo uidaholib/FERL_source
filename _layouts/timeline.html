@@ -17,7 +17,7 @@ layout: page
 {{ content }}
 
 {% assign items = site.data[site.metadata] %}
-{% assign raw-dates = site.data.metadata | map: 'date' | compact%}
+{% assign raw-dates = site.data[site.metadata] | map: 'date' | compact %}
 {% capture clean-years %}{% for date in raw-dates %}{% if date contains "-" %}{{date | split: "-" | first }}{% elsif date contains "/" %}{{ date | split: "/" | last }}{% else %}{{ date }}{% endif %}{% unless forloop.last %};{% endunless %}{%- endfor -%}{% endcapture %}
 {%- assign years = clean-years | split: ";" | sort  -%}
 {%- assign uniqueYears = years | uniq | sort -%}
@@ -30,7 +30,7 @@ layout: page
     <th><h3 id="{{ year }}">{{ year }}</h3></th>
     <td>
     {% for item in items %}{% if item.date contains year %}
-    <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="{{ site.objects | append: '/' | append: page.resource-identifier | append: '_th.jpg' }}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
+    <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" ><img class="lazy img-thumbnail m-1" data-original="{{ site.objects | append: '/thumbs/' | append: item.object-id | append: '_th.jpg' }}" alt="{{ item.title | escape }}" data-toggle="tooltip" data-placement="bottom" title="{{ item.title | escape }} | {{ item.date | escape }}"></a>
     {% endif %}{% endfor %}
     </td>
   </tr>

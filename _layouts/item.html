@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign fields = site.data.metadata-fields -%}
+{%- assign fields = site.data.metadata-config -%}
 <div class="container py-3">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ '/' | absolute_url }}">Home</a></li>
@@ -12,10 +12,10 @@ layout: default
     <div class="row">
         <div class="col-md-4" >
             <div id="item-image">
-                <img src="{{ site.objects | append: '/' | append: page.resource-identifier | append: '_sm.jpg' }}" alt="pdf thumbnail" class="img-thumbnail">
+                <img src="{{ site.objects | append: '/small/' | append: page.object-id | append: '_sm.jpg' }}" alt="pdf thumbnail" class="img-thumbnail">
             </div>
             <div id="item-link" class="text-center my-2">
-                <a href="{{ cdm-url }}/utils/getfile/{{ collection-id }}/idahowater/id/{{ page.cdm-number }}/filename/{{ page.resource-identifier }}.pdf" target="_blank" class="btn btn-primary" title="PDF download">Download PDF</a>
+                <a href="{{ site.objects | append: '/' | append: page.filename }}" target="_blank" class="btn btn-primary" title="PDF download">Download PDF</a>
             </div>
         </div>
         <div class="col-md-8">
