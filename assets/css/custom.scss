@@ -4,7 +4,8 @@
 @charset "utf-8";
 
 // base variables
-$base-font-family: "Oswald", Verdana, Verdana, Geneva, sans-serif; 
+//$base-font-family: "Oswald", Verdana, Verdana, Geneva, sans-serif; 
+$base-font-family: "Ringside Narrow A", "Ringside Narrow B", Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
@@ -39,7 +40,7 @@ $on-laptop:        800px;
     }
 }
 
-@import "custom";
+@import "uidahofonts", "custom";
 
 //@import "base";
 //@import "layout";
