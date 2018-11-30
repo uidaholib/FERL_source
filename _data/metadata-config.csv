@@ -4,7 +4,7 @@ report_type,Report type,
 date,Date,DCTERMS.created
 authors,Authors,DC.creator
 authors_affiliation,Affiliation,
-contributors,Contributors,
+contributors,Authors,
 contributors_affiliation,Affiliation,
 publisher,Publisher,
 funder,Funder,
