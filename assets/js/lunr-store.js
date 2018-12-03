@@ -10,7 +10,7 @@ var store = [
         "authors": {{ item.authors | jsonify }},
         "subjects": {{ item.concepts | split: ";" | jsonify }},
         "date": {{ item.date | jsonify }},
-        "abstract": {{ item.abstract | jsonify }},
+        "abstract": {{ item.abstract | normalize_whitespace | jsonify }},
         "place": {{ item.places | jsonify }}
     }{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
