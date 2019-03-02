@@ -5,24 +5,24 @@
 
 # Site settings
 # title appears in the header
-title: Fish Ecology Research Lab Collection
+title: "Adult Salmon and Steelhead Migration Studies: 1996-2014" # Fish Ecology Research Lab Collection
 # tagline appears in the header, should be short
-tagline: "A collection of scientific reports from University of Idaho's Fish Ecology Research Lab"
+tagline: "A collection of scientific reports and datasets from University of Idaho's Fish Ecolocy Research Lab"
 # description is for metadata tags
 # might appear in search result lists, keep around 160 characters max
-description: "The Fish Ecology Research Lab Collection provides open digital access to unique information resources relating to water issues in key Idaho river basins."
+description: "A collection of scientific reports and datasets from University of Idaho's Fish Ecolocy Research Lab related to Adult Salmon and Steelhead Migration Studies 1996-2014."
 # for metatags
-keywords: university of idaho, digital collections
+keywords: salmon; university of idaho; scientific reports; Idaho; digital collections
 # contact person
 email: ewilliamson@uidaho.edu
 collection-date: "2018"
 
 # images
 # banner-image appears in index header
-banner-image: /assets/example.jpg
+banner-image: /assets/images/ferl-river.jpg
 # featured-image appears in meta tags
 # represents the collection in other aggregations
-featured-image: /objects/aacc-bowls-4-center-crop4.jpg
+featured-image: /assets/images/tagging_fish.jpg
 
 # url variables
 # library's domain (only changed if using github pages)
