@@ -9,7 +9,7 @@ layout: page
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Download Metadata</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Download Complete Metadata</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -18,15 +18,6 @@ layout: page
                 <a class="btn btn-primary col-md-6 col-md-offset-3" href="{{ '/data/metadata.csv' | absolute_url }}" target="_blank">CSV spreadsheet</a>
                 <br>
                 <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ '/data/metadata.json' | absolute_url }}" target="_blank">JSON</a>
-                <br>
-                <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ '/data/geodata.json' | absolute_url }}" target="_blank">GeoJSON</a>
-                <br>
-                <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ '/data/subjects.json' | absolute_url }}" target="_blank">Subjects JSON</a>
-                <br>
-                <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ '/data/subjects.csv' | absolute_url }}" target="_blank">Subjects CSV</a>
-                <br>
-                <a class="btn btn-primary col-md-6 col-md-offset-3 mt-2" href="{{ '/data/places.csv' | absolute_url }}" target="_blank">Places CSV</a>
-                <br>
             </div>
         </div>
     </div>
@@ -40,7 +31,8 @@ layout: page
             <tr>
                 <th scope="col">Title</th>
                 <th scope="col">Date</th>
-                <th scope="col">Subjects</th>
+                <th scope="col">Type</th>
+                <th scope="col">Number</th>
                 <th scope="col">Abstract</th>
                 <th>Link</th>
             </tr>
