@@ -27,11 +27,7 @@ layout: page
             <hr>
             <p class="card-text"><strong>Date:</strong> {{ item.date }}<br>
             <strong>Report type:</strong> {{ item.report_type }}<br>
-            <strong>Subjects:</strong>
-            {% assign subjects = item.concepts | append: ";" | append: item.species | split:';' %}
-            {% for subject in subjects %}{% if subject !=" " %}
-            <a class="filter" data-filter="{{ subject | strip }}" href="{{ subject | strip | uri_escape | prepend: '/browse.html#' | absolute_url }}">{{ subject }}</a>{% unless forloop.last %}; {% endunless %} 
-            {% endif %}{% endfor %}<br>
+            {% if item.report_number %}<strong>Report number:</strong> {{ item.report_number }} <br>{% endif %}
             {% if item.location %}<strong>Locations:</strong> {{ item.places }}.<br>{% endif %}
             <strong>Abstract:</strong> {{ item.abstract | truncatewords: 25 }}<br>
             </p>
