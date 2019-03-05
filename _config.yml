@@ -18,11 +18,15 @@ email: ewilliamson@uidaho.edu
 collection-date: "2018"
 
 # images
+# give filename as it appears in "objects" dir (location given below)
 # banner-image appears in index header
-banner-image: /assets/images/ferl-river.jpg
+banner-image: ferl-river.jpg
+banner-image-alt: river
+home-title-y-padding: 2em
 # featured-image appears in meta tags
 # represents the collection in other aggregations
-featured-image: /assets/images/tagging_fish.jpg
+featured-image: tagging_fish.jpg
+featured-image-alt: researcher tagging salmon
 
 # url variables
 # library's domain (only changed if using github pages)

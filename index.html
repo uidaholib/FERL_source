@@ -3,7 +3,6 @@ layout: home-page
 title: Home
 featured-subjects: "FCPRS;Fishways;Salmonids;Migration;Radiotelemetry"
 featured-places: "Columbia River;Snake River;Bonneville Dam;John Day Dam"
-banner-image: "assets/images/ferl-river.jpg"
 ---
 
 {%- assign items = site.data[site.metadata] -%}
@@ -15,10 +14,10 @@ banner-image: "assets/images/ferl-river.jpg"
         <div class="card-body">
           <h5 class="card-title">Description</h5>
           <p class="card-text">
-            The Columbia River and its largest tributary, the Snake River, were historically among the most productive salmon and steelhead river systems in the world.  Habitat loss, water diversion, hatchery propagation, excessive harvest, and construction of dams in the Federal Columbia River Power System (FCRPS) decimated many of the runs.  The University of Idaho and its research partners have used radiotelemetry to study the migrations, dam passage behaviors, and survival of adult salmon and steelhead in the FCRPS since the 1990s.  The studies collected data from ~27,500 upriver-migrating spring-, summer- and fall-run Chinook salmon (Oncorhynchus tshawytscha), sockeye salmon (O. nerka), and steelhead (O. mykiss) over 15 study years.  The adult salmon research program has amassed one of the world’s largest fish migration datasets along with an extensive catalog of technical reports and peer-reviewed publications.  This website provides: (1) full documentation of study procedures, protocols, and objectives; (2) access to an archive for the radiotelemetery datasets and associated metadata; and (3) all of the technical reports and peer-reviewed publications associated with the project.
+            The Columbia River and its largest tributary, the Snake River, were historically among the most productive salmon and steelhead river systems in the world. The University of Idaho and its research partners have used radiotelemetry to study the migrations, dam passage behaviors, and survival of adult salmon and steelhead in the Columbia since the 1990s, amassing one of the world’s largest fish migration datasets along with an extensive catalog of technical reports and peer-reviewed publications.
           </p>
           <a class="btn btn-clearwater" href="{{ '/about.html' | relative_url }}" >Learn More &raquo;</a>
-          <a href="">Subject Matter Index to Technical Reports and Peer-Reviewed Papers  &raquo;</a>
+          <a class="btn btn-clearwater" href="">Subject Matter Index &raquo;</a>
         </div>
       </div>
 
@@ -32,14 +31,25 @@ banner-image: "assets/images/ferl-river.jpg"
 
   <div class="col-md-4">  
 
-        {% include index/documents.html %}
+    <div class="card mb-3" >
+      <div class="card-body">
+        <h5 class="card-title">Objects</h5>
+        <p class="card-text">
+          <ul class="list-unstyled">
+            <li>65 <a href="{{ '/browse.html#Technical%20Report' | relative_url }}">Technical Reports</a></li>
+            <li>51 <a href="{{ '/browse.html#Letter%20Report' | relative_url }}">Letter Reports</a></li>
+            <li>Peer Reviewed Papers</li>
+            <li><a href="https://data.nkn.uidaho.edu/dataset/tag-migration-and-fate-data-adult-radio-tagged-chinook-and-sockeye-salmon-and-steelhead" target="_blank">Data Sets</a></li>
+      </div>
+    </div>
+
         {% include index/time.html %}
 
         <div class="card mb-3">
           <div class="card-body">
               <h5 class="card-title">Synthesis Report</h5>
               <a href="{{ '/data/ferl-tr-2017-2.html' | relative_url }}">
-                  <img class="img-fluid" src="https://www.lib.uidaho.edu/digital/objects/ferl/small/ferl-tr-2017-2_sm.jpg" alt="cover of final report" >
+                  <img class="img-fluid img-thumbnail" src="https://www.lib.uidaho.edu/digital/objects/ferl/small/ferl-tr-2017-2_sm.jpg" alt="cover of final report" >
               </a>
           </div>
         </div>
