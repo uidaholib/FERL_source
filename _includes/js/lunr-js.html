@@ -55,9 +55,7 @@ function lunr_search () {
             '<p class="h4"><a href="{{ site.baseurl }}/data/' + store[ref].indexId + '.html">' + store[ref].title+ '</a></p>' +
             '<p class="ml-3">' +
             store[ref].date + '. ' +
-            store[ref].abstract.split(" ").splice(0,20).join(" ") + '...<br>' +
-            'Subjects: ' + store[ref].subjects.join("; ") + '. ' +
-            store[ref].place +
+            store[ref].abstract.split(" ").splice(0,30).join(" ") + '...<br>' +
             '</p></td>' +
       '</tr>';
     resultdiv.append(searchitem);
