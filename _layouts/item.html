@@ -15,7 +15,10 @@ layout: default
                 <img src="{{ site.objects | append: '/small/' | append: page.object-id | append: '_sm.jpg' }}" alt="pdf thumbnail" class="img-thumbnail shadow">
             </div>
             <div id="item-link" class="text-center my-2">
-                <a href="{{ site.objects | append: '/' | append: page.filename }}" target="_blank" class="btn btn-primary" title="PDF download">Download PDF</a>
+                {% if page.report_type =="Journal Article" %}
+                <a href="{{ page.filename }}" target="_blank" class="btn btn-primary" title="View article">Article link</a>
+                {% else %}
+                <a href="{{ site.objects | append: '/' | append: page.filename }}" target="_blank" class="btn btn-primary" title="PDF download">Download PDF</a>{% endif %}
             </div>
         </div>
         <div class="col-md-8">

@@ -17,7 +17,5 @@ identifier,Source Identifier
 type,Type,DC.type
 format,Format
 rights,Rights,
-rightsstatement,Rights statement,
 report_number,Report number,
-original_filename,Original filename,
-id,Digital identifier
+object-id,Digital identifier
