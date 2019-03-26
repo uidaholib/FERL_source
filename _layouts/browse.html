@@ -29,7 +29,7 @@ layout: page
                 <strong>Report type:</strong> {{ item.report_type }}<br>
                 {% if item.report_number %}<strong>Report number:</strong> {{ item.report_number }} <br>{% endif %}
                 {% if item.location %}<strong>Locations:</strong> {{ item.places }}.<br>{% endif %}
-                <strong>Abstract:</strong> {{ item.abstract | truncatewords: 25 }}<br>
+                {% if item.abstract %}<strong>Abstract:</strong> {{ item.abstract | truncatewords: 25 }}<br>{% endif %}
                 </p>
                 <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" class="btn btn-sm btn-info" title="link to {{ item.title | escape }}">Go to Document</a>
             </div>
