@@ -3,9 +3,8 @@ title,Item title,DC.title
 report_type,Report type,
 date,Date,DCTERMS.created
 authors,Authors,DC.creator
-authors_affiliation,Affiliation,
-contributors,Authors,
-contributors_affiliation,Affiliation,
+authors_affiliation,Affiliations,
+report_number,Report number,
 publisher,Publisher,
 funder,Funder,
 abstract,Abstract,DC.description
@@ -17,5 +16,4 @@ identifier,Source Identifier
 type,Type,DC.type
 format,Format
 rights,Rights,
-report_number,Report number,
 object-id,Digital identifier
