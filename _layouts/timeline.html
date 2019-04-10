@@ -34,7 +34,7 @@ layout: page
           <img data-original="{{ site.objects | append: '/thumbs/' | append: item.object-id | append: '_th.jpg' }}" alt="{{ item.title | escape }}" class="mr-3 lazy border">
           <div class="media-body">
             <a href="{{ '/data/' | absolute_url | append: item.object-id | append: '.html' }}" >{{ item.title }}</a><br>
-            <small>{{ item.report_type }} | {{ item.authors }}</small>
+            <small>{{ item.report_type }} | {{ item.report_number }} | {{ item.authors }}</small>
           </div>
         </li>
         {% endif %}{% endfor %}
