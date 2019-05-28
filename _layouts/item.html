@@ -16,9 +16,9 @@ layout: default
             </div>
             <div id="item-link" class="text-center my-2">
                 {% if page.report_type =="Journal Article" %}
-                <a href="{{ page.filename }}" target="_blank" class="btn btn-primary" title="View article">Article link</a>
+                <a href="{{ page.filename }}" rel="noopener" target="_blank" class="btn btn-primary" title="View article">Article link</a>
                 {% elsif page.report_type == "Dataset" %}
-                <a href="{{ page.filename }}" target="_blank" class="btn btn-primary" title="View dataset">Dataset link</a>
+                <a href="{{ page.filename }}" rel="noopener" target="_blank" class="btn btn-primary" title="View dataset">Dataset link</a>
                 {% else %}
                 <a href="{{ site.objects | append: '/' | append: page.filename }}" target="_blank" class="btn btn-primary" title="PDF download">Download PDF</a>{% endif %}
             </div>
