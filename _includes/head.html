@@ -5,8 +5,10 @@
 {% if page.layout != "document" %}{% include page-meta.html %}{% endif %}
 {% if page.layout == "document" %}{% include item-meta.html %}{% endif %}
 
-{% if site.bstheme %}<link rel="stylesheet" href="{{ '/assets/css/' | append: site.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
+{% if site.data.theme.bstheme %}<link rel="stylesheet" href="{{ '/css/' | append: site.data.theme.bstheme | append: '/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">
 {% else %}<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
+{% if layout.gallery == true %}<link rel="stylesheet" href="{{ '/lightgallery/css/lightgallery.min.css' | prepend: site.digital-assets }}" type="text/css">{% endif %}
+{% if page.layout == 'data' %}<link rel="stylesheet" type="text/css" href="{{ '/datatables/datatables.min.css' | prepend: site.digital-assets }}">{% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
-{% include google-analytics-php.html %}
+{% include google-analytics.html %}
 <!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->
