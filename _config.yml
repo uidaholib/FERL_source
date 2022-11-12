@@ -10,12 +10,17 @@ title: "Adult Salmon and Steelhead Migration Studies: 1996-2014" # Fish Ecology 
 tagline: "A collection of scientific reports and datasets from University of Idaho's Fish Ecology Research Lab"
 # description is for metadata tags
 # might appear in search result lists, keep around 160 characters max
-description: "A collection of scientific reports and datasets from University of Idaho's Fish Ecolocy Research Lab related to Adult Salmon and Steelhead Migration Studies 1996-2014."
+description: "A collection of scientific reports and datasets from University of Idaho's Fish Ecology Research Lab related to Adult Salmon and Steelhead Migration Studies 1996-2014."
 # for metatags
 keywords: salmon; columbia river; snake river; fish migration; university of idaho; scientific reports; Idaho
 # contact person
 email: ewilliamson@uidaho.edu
 collection-date: "2019"
+# Organization branding
+organization-name: "Digital Initiatives, University of Idaho Library"
+organization-link: https://www.lib.uidaho.edu/digital/
+organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
+organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
 
 # images
 # give filename as it appears in "objects" dir (location given below)
@@ -38,6 +43,7 @@ baseurl: /digital/ferl
 collection-id: ferl
 # Objects dir location
 objects: https://www.lib.uidaho.edu/digital/objects/ferl
+source-code: https://github.com/uidaholib/FERL_source
 
 # base url for our CDM server
 cdm-url: https://digital.lib.uidaho.edu
@@ -45,17 +51,6 @@ cdm-url: https://digital.lib.uidaho.edu
 digital-assets: https://www.lib.uidaho.edu/assets
 
 # google-cse-id:
-
-# Theme Options
-# navbar text color
-# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
-navbar-color: navbar-dark
-# navbar background color
-# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
-navbar-background: bg-dark 
-# theme with Bootswatch (https://github.com/thomaspark/bootswatch)
-# Choose from: cerulean; cosmo; cyborg; darkly; flatly; journal; litera; lumen; lux; materia; minty; pulse; sandstone; simplex; sketchy; slate; solar; spacelab; superhero; united; yeti 
-bootswatch: # leave blank or comment out for plain bootstrap
 
 # Dev variables: 
 # choose metadata set, i.e. easily switch between full or dev version
@@ -74,3 +69,7 @@ page_gen:
     extension: 'html'    
 
 exclude: [docs, 'Rakefile']
+
+# compress CSS output
+sass:
+  style: compressed
