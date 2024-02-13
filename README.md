@@ -1,5 +1,7 @@
 # FERL_source
 
+**This project has migrated to our main [documents-digital-collections-template](https://github.com/uidaholib/documents-digital-collections-template/tree/ferl)**
+
 IR document collection 
 
 UIdaho Fish Ecology Research Lab, https://www.uidaho.edu/cnr/fish-ecology-research-lab
